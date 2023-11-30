@@ -7,25 +7,29 @@
 
 void dance_bot(int interval)
 {
-	int i;
+	int i,j;
 	printf("Dance-Bot initiate:");
 	for (i = 0; i < interval; i++)
-	{	
-		printf("\n");
-		printf("  |  \n");
-		printf("[0_0]\n");
-		if (i % 2 == 0)
-		{
-			printf("-[I]|\n");
+	{
+		for (j = 0; j <= 3; j++)
+		{	
+			printf("\n");
+			printf("  |  \n");
+			printf("[0_0]\n");
+			if (j % 2 == 0)
+			{
+				printf("-[I]|\n");
+			}
+			else
+			{
+				printf("|[I]-\n");
+			}
+			printf(" | | \n");
 		}
-		else
-		{
-			printf("|[I]-\n");
-		}
-		printf(" | | \n");
-		printf("(Your dance message here)\n");
+		printf("Dance Cycle: %d\n",(i + 1));
+		
 	}
-	printf("Dance terminated: Dance-Bot power down.");
+	printf("Dance terminated: Dance-Bot power down.\n");
 }
 
 int main()

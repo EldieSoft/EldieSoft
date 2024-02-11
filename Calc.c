@@ -3,11 +3,11 @@
  *
  *Pick a number between 1 and 5, and the magical computer box will do the coresponding operation.
  *
- *1 = add, 2 = sub, 3 = mul, 4 = div, 5 = square
+ *1 = add, 2 = sub, 3 = mul, 4 = div, 5 = square, 6 = cube
  *
  * Big Bosco 2/9/24
  *
- * Version 1.0.0
+ * Version 1.0.1
  * 
 */ 
 
@@ -17,7 +17,7 @@
 int get_operation()//function to get operation
 {
 	int operation;
-	printf("What is your operation?\n1: ADD\t 2: SUB\t 3: MUL\t 4: DIV\t5: SQR\t 0: CLOSE\n");
+	printf("What is your operation?\n1: ADD\t 2: SUB\t 3: MUL\t 4: DIV\t 5: SQR\t 6: CUB\t 0: CLOSE\n");
 	scanf("%d", &operation);
 	return operation;
 }
@@ -94,6 +94,9 @@ int main()
 				break;
 			case 5:
 				numberino = sqr();
+				break;
+			case 6:
+				numberino = cub();
 				break;
 			default:
 				printf("ERROR\n");

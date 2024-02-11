@@ -7,7 +7,7 @@
  *
  * Big Bosco 2/9/24
  *
- * Version 1.0.1
+ * Version 1.0.2
  * 
 */ 
 
@@ -65,7 +65,7 @@ float cub()//function to cube number
 {
 	float num;
 	printf("What do you want to cube?\n");
-	scanf("%f",num);
+	scanf("%f",&num);//missing ampersand broke the entire program last time
 	printf("Cubing: %.2f\n",num);
 	return num * num * num;
 }

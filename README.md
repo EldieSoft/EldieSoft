@@ -2,3 +2,5 @@
 Current works in progress:
 
 -<i>PyDnD</i>: a text-based, single player DnD client.
+
+-Learning Tkinter

@@ -1,6 +1,6 @@
 <h1>EldieSoft GitHub</h1>
 Current works in progress:
 
--<i>PyDnD</i>: a text-based, single player DnD client.
+-<i>SageDM</i>: a text-based, single player text-adventure engine and client.
 
--Learning Tkinter
+-Learning Tkinter - a Python graphics library.
